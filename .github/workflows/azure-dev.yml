@@ -78,12 +78,12 @@ jobs:
 
       - name: Provision Infrastructure
         run: |
-          pushd ./workshop
+          pushd ./workshop2
           azd provision --no-prompt
           popd
 
       - name: Deploy Application
         run: |
-          pushd ./workshop
+          pushd ./workshop2
           azd deploy --no-prompt
           popd
